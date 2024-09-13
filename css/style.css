@@ -8,6 +8,8 @@
 
 /* style header */
 header{
+    display: grid;
+    grid-template-rows: 10px;
     background-color: #353535;
     text-align: center;
     padding: 20px;
@@ -15,8 +17,8 @@ header{
 
 header img{    
     align-items: center;
-    width: 150px;
-    height: 150px;   
+    width: 100px;
+    height: 100px;   
 }
 
 header h1{
@@ -45,10 +47,9 @@ main{
 
 }
 
-main h1{
+main h2{
     margin-top: 20px;
     margin-bottom: 20px;
-    
 }
 
 .texto-principal{
@@ -58,7 +59,6 @@ main h1{
 
 .img-principal{
     display: inline;
-
 }
 
 .pie-imagen{
