@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de mi bt -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- biblioteca de bt -->
+    
+    <!-- link css -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
@@ -10,62 +15,89 @@
      <!-- banner principal -->
     <header>
         <!-- Logo -->
-        <a href="../index.html">
-            <img src="../img/logo.jpg" alt=""> 
-       </a>
+       
+      <img src="../img/logo.jpg" alt="imagen-principal"> 
         
         
-        
-        <!-- Parte navegable -->
-        
-        <h1>La Cocina de Pancha</h1> 
-        
-        <!-- navegacion para el menu -->
-        
-        <div class="div-menu">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/quienessomos.html">¿Quienes somos?</a></li>
-                    <li><a href="../pages/productos.html">Productos</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                    <li><a href="../pages/register.html">Registrate</a></li>
-                </ul>
+      <!-- Parte navegable -->
+      
+      <h1>La Cocina de Pancha</h1> 
+      
+      <!-- menu de navegacion con bt -->
+      
+      <section>
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #353535;">
+              <div class="container-fluid">
+                <a class="navbar-brand home-item home-boton" href="../index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse link-navegacion" id="navbarNavDropdown">
+                  <ul class="navbar-nav contenido-medio">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./quienessomos.html">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="item-iniciar-sesion">
+                      <a class="nav-link" href="./register.html">Iniciar sesion</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Nosotros
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item pag-ext" href="./contacto.html">¿Donde estamos?</a></li>
+                        <li><a class="dropdown-item pag-ext" href="./creaador-page.html">Diseño Web</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </nav>
-        </div>
-   
-
+      </section>
     </header>
 
     <main>
         
-        <h1 class="titulo-principal">¡Genial!</h1>
+        <h2 class="titulo-principal">¡Genial!</h2>
         
-        <h2 class="subtitulo">Estas a punto de salvar tu cena</h2>
+        <h3 class="subtitulo">Estas a punto de salvar tu cena</h3>
         
         <!-- Lugar de encuentro -->
         
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6522.980721204261!2d-58.247978722290014!3d-35.16932889999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2c9d6590286bb%3A0x3ab92a25e152e21b!2sLa%20Buena%20Pasta%2Fpastas%20Frescas!5e0!3m2!1ses-419!2sar!4v1724529773950!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <div class="comunicacion">
-            <h1>GUÍA DE CONTACTO</h1>
+            <h2>GUÍA DE CONTACTO</h2>
             
         </div>
 
-        <section class="Redes-Sociales">
-            <div>
-                <!-- Instagram -->
+        <section>
+            <div class="redes-sociales">
+                <div class="instagram">
+                    <!-- Instagram -->
                 <a href="https://www.instagram.com/lacocinadepancha.ok/" target="_blank">
-                    <p>Instagram</p>
+                  <img src="../img/icon-instagram.png" alt="img-instagram" width="15%">
                 </a>
+                </div>
+                <div class="gmail">
+                    <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi8-e_-u46IAxWSGK0GHVSYHMAYABAAGgJwdg&co=1&ase=2&gclid=CjwKCAjwiaa2BhAiEiwAQBgyHj2GOtigPleIyWY9G3cY6-3kF3s2U-JfTxk9KEAuWlV7RVLtumLi5hoCIMgQAvD_BwE&ei=rELKZvjIEo7R1sQPhKSXyQM&ohost=www.google.com&cid=CAESV-D2VQ-Oilrbl14oEuvDsmhsaTUjN464dYgG9WTKnJpaT96LVCsMOcsJMc7K9Qv1_aGRAPJyLCbjTuTpbTR_Eu1D0E4kTukjixp45RvVY_xLTuOw2VuIog&sig=AOD64_0nCWvTgpxXF8AszORQU6GVrkK2Vg&q&sqi=2&nis=4&adurl&ved=2ahUKEwj4zub-u46IAxWOqJUCHQTSJTkQ0Qx6BAgIEAE" target="_blank">
+                      <img src="../img/icon-gmail.png" alt="img-gmail" width="15%">
+                    </a>
+                    
+                </div>
                 <!-- Gmail -->          
-                <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi8-e_-u46IAxWSGK0GHVSYHMAYABAAGgJwdg&co=1&ase=2&gclid=CjwKCAjwiaa2BhAiEiwAQBgyHj2GOtigPleIyWY9G3cY6-3kF3s2U-JfTxk9KEAuWlV7RVLtumLi5hoCIMgQAvD_BwE&ei=rELKZvjIEo7R1sQPhKSXyQM&ohost=www.google.com&cid=CAESV-D2VQ-Oilrbl14oEuvDsmhsaTUjN464dYgG9WTKnJpaT96LVCsMOcsJMc7K9Qv1_aGRAPJyLCbjTuTpbTR_Eu1D0E4kTukjixp45RvVY_xLTuOw2VuIog&sig=AOD64_0nCWvTgpxXF8AszORQU6GVrkK2Vg&q&sqi=2&nis=4&adurl&ved=2ahUKEwj4zub-u46IAxWOqJUCHQTSJTkQ0Qx6BAgIEAE" target="_blank">
-                    <p>Gmail</p>
-                </a>
+                <div class="whatsapp">
+                    
                 <!-- Whatsapp -->
                 <a href="https://web.whatsapp.com/" target="_blank">
-                    <p>Whatsapp</p>
+                    <img src="../img/icon-whatsapp.png" alt="img-whatsapp" width="15%">
+                </a>
 
+                </div>
+                
                 </a>
             </div>
         </section>
@@ -81,6 +113,8 @@
         </p>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>

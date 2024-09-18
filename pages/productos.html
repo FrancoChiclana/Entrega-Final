@@ -3,77 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de mi bt -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- link de mi css -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Productos</title>
 </head>
-<body>
-     <!-- banner principal -->
-     <header>
-        <!-- Logo -->
-       <a href="../index.html">
+<body class="body-productos">
 
-            <img src="../img/logo.jpg" alt=""> 
-       </a>
+  <!-- banner principal -->
+  <header>
+      <!-- Logo -->
+       
+      <img src="../img/logo.jpg" alt="imagen-principal"> 
         
         
-        
-        <!-- Parte navegable -->
-        
-        <h1>La Cocina de Pancha</h1> 
-        
-        <!-- navegacion para el menu -->
-        
-        <div class="div-menu">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/quienessomos.html">¿Quienes somos?</a></li>
-                    <li><a href="../pages/productos.html">Productos</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                    <li><a href="../pages/register.html">Registrate</a></li>
-                </ul>
+      <!-- Parte navegable -->
+      
+      <h1>La Cocina de Pancha</h1> 
+      
+      <!-- menu de navegacion con bt -->
+      
+      <section>
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #353535;">
+              <div class="container-fluid">
+                <a class="navbar-brand home-item home-boton" href="../index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse link-navegacion" id="navbarNavDropdown">
+                  <ul class="navbar-nav contenido-medio">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./quienessomos.html">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="item-iniciar-sesion">
+                      <a class="nav-link" href="./register.html">Iniciar sesion</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Nosotros
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item pag-ext" href="./contacto.html">¿Donde estamos?</a></li>
+                        <li><a class="dropdown-item pag-ext" href="./creaador-page.html">Diseño Web</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </nav>
-        </div>
-   
+      </section>
 
-   </header>
+  </header>
 
-   <main class="productos">
+  <main>
         
-        <h1>PRODUCTOS</h1>
+    <h2>PRODUCTOS</h2>
 
-        <div class="row">
-            <a href="./contacto.html" class="">
-                <img src="../img/Pizza.jpg" alt="">
+    <div class="productos">
+      
+          <div class="row">
+            <a href="./contacto.html">
+                <img src="../img/Pizza.jpg" alt="pizza-img" width="30%">
                 <h3>Pizza</h3>
                 <strong class="price">$5000</strong>
             </a>
-        </div>
-        <div class="row-2">
+          </div>
+          <div class="row-2">
             <a href="./contacto.html">
-            <img src="../img/hamburguesa-producto.jfif" alt="">
+            <img src="../img/hamburguesa-producto.jfif" alt="burger-img" width="30%">
             <h3>Hamburguesa</h3>
             <strong class="price"> $8500 </strong>
             </a>
-        </div>
+          </div>
 
-        <div class="row-3">
+          <div class="row-3">
             <a href="./contacto.html">
-                <img src="../img/Pasta-producto.jpeg" alt="">
+                <img src="../img/Pasta-producto.jpeg" alt="pasta-img" width="30%">
                 <h3>Pasta</h3>
                 <strong class="price"> $2500 </strong>
             </a>
-        </div>
+          </div>
 
-        <div class="row-4">
+          <div class="row-4">
             <a href="./contacto.html">
-                <img src="../img/empanadas-producto.jpg" alt="">
+                <img src="../img/empanadas-producto.jpg" alt="" width="30%">
                 <h3> Empanadas </h3>
                 <strong class="price"> $5000 </strong>
             </a>
+          </div>
         </div>
+        
             
-
+        
            
         
 
@@ -88,6 +113,9 @@
         </p>
 
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   
 
 </body>
