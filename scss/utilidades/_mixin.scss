@@ -1,0 +1,50 @@
+//con parametros
+
+@mixin extent-padding ($padding){
+    padding: $padding;
+}
+
+@mixin extent-margin ($margin){
+    margin: $margin;
+}
+
+
+
+@mixin extent-image ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin image-radius ($border-radius-left, $border-radius-right){
+    border-top-left-radius: ($border-radius-left);
+    border-bottom-right-radius: ($border-radius-right);
+}
+
+
+
+// sin parametros
+
+@mixin footer{
+    text-align: center;
+    color: aliceblue;
+    background-color: #353535;
+}
+
+
+
+//main principal 
+
+@mixin principal{
+    background-color: grey;
+    text-align: center;
+}
+
+@mixin color{
+    color: aliceblue;
+}
+
+
+
+
+
+

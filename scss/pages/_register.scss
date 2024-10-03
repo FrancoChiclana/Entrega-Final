@@ -1,0 +1,131 @@
+@import "../utilidades/mixin";
+main {
+    @include extent-padding (20px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    .conteiner {
+        max-width: 600px;
+        @include extent-margin (0 auto);
+        @include extent-padding (20px);
+        border: 1px solid white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px black;
+        background-color: white;
+
+        .titulo-registrate {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #353535;
+        }
+
+        form {
+            fieldset {
+                border: none;
+                @include extent-padding (0);
+
+                .registro-email,
+                .registro-contraseña {
+                    margin-bottom: 20px;
+
+                    label {
+                        display: block;
+                        margin-bottom: 5px;
+                        font-weight: bold;
+                        color: #555;
+                    }
+
+                    input[type="email"],
+                    input[type="password"] {
+                        width: 100%;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        font-size: 1rem;
+
+                        &:focus {
+                            border-color: #007bff;
+                            outline: none;
+                        }
+                    }
+                }
+
+                .enviar-form {
+                    text-align: center;
+
+                    input[type="submit"] {
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 4px;
+                        background-color: #353535;
+                        color: white;
+                        font-size: 1rem;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: black;
+                            transition: 2s;
+                        }
+
+                        &:active{
+                            background-color: red;
+                            transition: 0s;
+                        }
+                    }
+                }
+
+                h2 {
+                    margin-top: 30px;
+                    font-size: 2rem;
+                    color: black;
+                    text-align: center;
+                }
+
+                p {
+                    margin: 10px 0;
+                    line-height: 1.6;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+
+// MQ //
+
+    .conteiner{
+         /* MQ para pantallas pequeñas (celulares) */
+    @media (max-width: 576px) {
+        .titulo-registrate {
+            font-size: 1.5em; 
+        }
+    
+        p {
+            font-size: 0.9em;
+        }
+    }
+    
+    /* MQ para pantallas medianas (tablets) */
+    @media (min-width: 577px) and (max-width: 768px) {
+        .titulo-registrate {
+            font-size: 1.6em; 
+        }
+    
+        p {
+            font-size: 1em; 
+        }
+    }
+    
+    /* MQ para pantallas grandes (escritorio) */
+    @media (min-width: 769px) {
+        .titulo-registrate {
+            font-size: 2em;
+        }
+    
+        p {
+            font-size: 1.1em;
+        }
+    }
+    }
+

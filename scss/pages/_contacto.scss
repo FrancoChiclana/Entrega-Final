@@ -1,0 +1,66 @@
+@import "../utilidades/mixin";
+
+.contacto-main {
+    background-color: grey;
+    @include extent-padding (20px);
+    text-align: center;
+
+    .titulo-principal-contacto {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        @include color;
+    }
+
+    .subtitulo {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        @include color;
+    }
+
+    iframe {
+        @include extent-image (100%, 450px);
+        max-width: 600px;
+        border-radius: 100px;
+        margin-bottom: 20px;
+    }
+
+    .comunicacion {
+        h2 {
+            font-size: 2rem;
+            margin: 20px 0;
+            @include color;
+        }
+    }
+
+    .redes-sociales {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        div {
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                @include color;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: #007bff;
+                }
+
+                img {
+                    width: 100%;
+                    max-width: 50px;
+                    margin-bottom: 5px;
+                    
+                }
+
+                h3 {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

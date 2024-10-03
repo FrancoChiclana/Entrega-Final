@@ -1,0 +1,154 @@
+@import "../utilidades/mixin";
+
+main {
+    @include extent-padding (20px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: gray;
+
+    .quienes-somos {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            @include color;
+        }
+
+        .texto-quienes-somos-1 {
+            p {
+                @include extent-margin (10px);
+                line-height: 1.6;
+                @include color;
+
+                span {
+                    @include color;
+                    h4 {
+                        font-weight: bold;
+                        @include color;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+
+        .quienes-somos-img {
+            width: 40%;
+            margin-left: 20px;
+            border-radius: 8px;
+        }
+    }
+
+    .quienes-segunda-parte {
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            @include color;
+        }
+
+        .quienes-somos-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img-negocio-1 {
+                img {
+                    width: 100%;
+                    max-width: 600px;
+                    border-radius: 8px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .contenedor-info {
+                p {
+                    margin: 10px 0;
+                    line-height: 1.6;
+                    @include color;
+                }
+            }
+        }
+    }
+}
+
+
+// MQ //
+
+main{
+    /* MQ para pantallas pequeñas (celulares) */
+    @media (max-width: 576px) {
+        .quienes-somos {
+            flex-direction: column; 
+            text-align: center; 
+        }
+
+        .quienes-somos-img {
+            width: 100%; 
+            margin-bottom: 20px; 
+        }
+
+        .quienes-somos-2 {
+            flex-direction: column; 
+        }
+
+        .img-negocio-1 {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .contenedor-info {
+            text-align: left; 
+        }
+
+        h2 {
+            font-size: 1.5em; 
+        }
+
+        h4 {
+            font-size: 1.2em; 
+        }
+    }
+
+/* MQ para pantallas medianas (tablets) */
+    @media (min-width: 577px) and (max-width: 768px) {
+        .quienes-somos {
+            flex-direction: column; 
+        }
+
+        .quienes-somos-img {
+            width: 80%; 
+            margin: 0 auto;
+        }
+
+        .img-negocio-1 {
+            width: 80%; 
+            margin: 0 auto; 
+        }
+    }
+
+/* MQ para pantallas grandes (escritorio) */
+    @media (min-width: 769px) {
+
+        .quienes-somos {
+            flex-direction: row;
+        }
+
+        .quienes-somos-img,
+        .img-negocio-1 {
+            width: 40%;
+        }
+
+        .contenedor-info {
+            flex: 2; 
+        }
+
+        h2 {
+            font-size: 2em; 
+        }
+
+        h4 {
+            font-size: 1.5em;
+        }
+    }
+}

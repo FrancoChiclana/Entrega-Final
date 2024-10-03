@@ -1,0 +1,120 @@
+/*import list*/
+@import "../utilidades/mixin";
+
+/* header general*/
+
+
+header{
+    display: flex;
+    background-color: #353535;
+    text-align: center;
+    @include extent-padding (20px);
+}
+    
+header{
+
+    .titulo{
+        a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+    }
+         
+}
+
+
+
+header{
+    section{
+        .pag-ext:hover{
+        background-color: red;
+        }
+    }
+    
+}
+
+header{
+    section{
+        .pag-ext:active{
+            background-color: red;
+        }
+    } 
+}
+
+header{
+     // MQ //
+    /* Estilos generales */
+
+    
+    .titulo h1 {
+        font-size: 2em; /* Tamaño del título */
+    }
+
+/* MQ para pantallas pequeñas (celulares) */
+    @media (max-width: 576px) {
+        .titulo h1 {
+            font-size: 1.5em;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 0.9em;
+        }
+
+        .navbar-toggler {
+            margin: 0; 
+        }
+    }
+
+/* MQ para pantallas medianas (tablts) */
+    @media (min-width: 577px) and (max-width: 768px) {
+        .titulo h1 {
+            font-size: 1.75em; /* Tamaño intermedio del título */
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1em; /* Tamaño intermedio de los enlaces */
+        }
+}
+
+/* MQ para pantallas grandes (escritorio) */
+    @media (min-width: 769px) {
+        .titulo h1 {
+            font-size: 2.5em; /* Aumenta el tamaño del título */
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.1em; /* Aumenta el tamaño de los enlaces */
+        }
+    }
+
+}
+
+footer{
+    @include footer;
+    @include extent-padding (50px);
+    
+    /* MQ para pantallas pequeñas (celulares) */
+    @media (max-width: 576px) {
+        footer p {
+            font-size: 0.8em; /* Tamaño del texto más pequeño en móviles */
+            padding: 10px; /* Menos padding */
+        }
+    }
+    
+    /* Media Query para pantallas medianas (tablets) */
+    @media (min-width: 577px) and (max-width: 768px) {
+        footer p {
+            font-size: 1em; /* Tamaño del texto normal en tabletas */
+            padding: 15px; /* Padding moderado */
+        }
+    }
+    
+    /* MQ para pantallas grandes (escritorio) */
+    @media (min-width: 769px) {
+        footer p {
+            font-size: 1.2em;
+            padding: 20px; 
+        }
+    }
+    
+}

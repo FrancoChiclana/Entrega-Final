@@ -1,0 +1,44 @@
+@import "../utilidades/mixin";
+
+main {
+    @include extent-padding (20px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    .desarrollo-web-titulo {
+        text-align: center;
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 2.5rem;
+            @include color;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            @include color;
+            margin-top: 5px;
+        }
+    }
+
+    .texto-desarrollo {
+        margin-bottom: 20px;
+        line-height: 1.6;
+        @include color;
+
+        p {
+            @include extent-margin (10px 0);
+        }
+    }
+
+    .imagen-desarrollo {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        img {
+            @include extent-image (100%, auto);
+            max-width: 475px;
+            border-radius: 8px;
+        }
+    }
+}
