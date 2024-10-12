@@ -79,9 +79,19 @@
     
     /* MQ para pantallas pequeñas (Celulares) */
     @media (max-width: 576px) {
+        .main-principal .contenido{
+            flex-direction: column;
+            align-items: center;
+        }
+        
         .main-principal h2 {
             font-size: 1.5em; 
         }
+
+        .main-principal .img{
+            width: 100%;
+        }
+
     
         .texto-contenedor p {
             font-size: 0.9em; 
@@ -90,6 +100,7 @@
     
     /* MQ para pantallas medianas (tablets) */
     @media (min-width: 577px) and (max-width: 768px) {
+        
         .main-principal h2 {
             font-size: 1.8em; 
         }
